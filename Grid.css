@@ -1,0 +1,70 @@
+
+
+  
+
+
+
+body {
+    background-color: #3F7373;
+
+
+  }
+  
+.beholder {
+  display: grid;
+  grid-template-columns: minmax(0,1) minmax(0,5) minmax(0,1) minmax(0,5);
+  grid-template-rows: 100px minmax(0,5) 100px;
+  grid-template-areas: 
+  '. tekstboks1 . tekstboks2 .' 
+  '. . . . .'
+  ;
+
+}
+.Transparent-box{
+  height: 100vh;
+  background-image: url();
+  background-size: no-repeat;
+}
+.tekstboks1 {
+  margin-left: 35px;
+  margin-top: 50px;
+  grid-area: tekstboks1;
+  max-width: 650px;
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:rgba(255,255,255, .4);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+  padding: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.tekstboks2 {
+  margin-left: 20px;
+  margin-top: 50px;
+  grid-area: tekstboks2;
+  max-width: 650px;
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:rgba(255,255,255, .4);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+  padding: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+.tekstboks1 .tekstboks2 h1{
+  font-size: 45px;
+}
+.tekstboks1 .tekstboks2 p{
+  font-size: 35px;
+}
+
+
